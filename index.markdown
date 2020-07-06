@@ -10,7 +10,77 @@ layout: home
 li {
     padding: 0.25rem;
 }
+
+.album {
+  min-height: 30rem; /* Can be removed; just added for demo purposes */
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background-color: #f7f7f7;
+}
+
+.card {
+  float: left;
+  width: 45%;
+  padding: .75rem;
+  margin-bottom: 2rem;
+  border: 0;
+}
+
+.card > img {
+  margin-bottom: .75rem;
+}
+
+.card-text {
+  font-size: 85%;
+}
 </style>
+
+<h2><u>Projects</u></h2>
+
+<div class="album text-muted">
+<div class="container">
+<div class="row">
+<div class="card">
+
+<img alt="scratchpad image"
+style="height: 280px; width: 100%; display: block;"
+src="/images/scratchpad.png"
+data-holder-rendered="true">
+
+<p class="card-text">
+<a href="https://scratch-pad-app.herokuapp.com/" target="_blank">Scratchpad App</a>
+is a light-weight web application that allows you to type quick notes into the app.
+<br/>
+Dont fear - The app will auto-save your notes for you into the browser in case you 
+lose connection or accidentally close the page.
+</p>
+<p class="card-text">
+App is hosted on Heroku using Docker Containers to manage a lightweight .Net Core 3.1
+site using jQuery to auto-save the scratchpad text. 
+<a href="https://github.com/LuisFuentes/ScratchPadApp" target="_blank">Source</a>
+</p>
+
+</div>
+
+<div class="card">
+<img alt="dating app image"
+style="height: 280px; width: 100%; display: block;"
+src="/images/datingapp.jpg"
+data-holder-rendered="true">
+
+<p class="card-text">
+A Dating App website created to learn more about Angular v8 & .NET Core.
+</p>
+<p class="card-text">
+Currently supports user registration and login using JWT (JSON Web Tokens) to authenticate from Angular
+client to .NET Core REST API.
+<a href="https://github.com/LuisFuentes/DatingApp" target="_blank">Source</a>
+</p>
+
+</div>
+</div>
+</div>
+</div>
 
 <h2><u>
 Experience
